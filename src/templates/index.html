@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Webview">
+    <meta name="author" content="Pavel Gurov">
+	<title>index</title>
+</head>
+<script>
+    const CURRENT_PAGE = 'index';
+</script>
+<body>
+    <div class="hash-navigation"></div>
+</body>
+<script>
+    if ("onhashchange" in window) {
+        document.querySelector('.hash-navigation').innerHTML = '#';
+    }
+</script>
+</html>

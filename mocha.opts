@@ -1,0 +1,7 @@
+--recursive
+--bail
+--check-leaks
+--ui bdd
+--compilers ts-node/register
+--watch-extensions  ts
+src/app/**/*.spec.ts
