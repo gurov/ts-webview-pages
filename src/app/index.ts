@@ -2,7 +2,7 @@ import './../main.css';
 
 import { DashboardRouter } from './dashboard.router';
 import { apiService } from './services/api-service';
-import { ProfilePage } from './profile';
+import { Webview2Router } from './webview2.router';
 
 declare const CURRENT_WEBVIEW: string;
 
@@ -21,8 +21,8 @@ window['init'] = function (tokens: string) {
         case 'dashboard':
             router = new DashboardRouter();
             break;
-        case 'profile':
-            router = new ProfilePage();
+        case 'webview2':
+            router = new Webview2Router();
             break;
 
     }
