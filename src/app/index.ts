@@ -4,7 +4,7 @@ import { DashboardRouter } from './dashboard.router';
 import { apiService } from './services/api-service';
 import { ProfilePage } from './profile';
 
-declare const CURRENT_PAGE: string;
+declare const CURRENT_WEBVIEW: string;
 
 let router = null;
 
@@ -17,7 +17,7 @@ window['init'] = function (tokens: string) {
         return;
     }
 
-    switch(CURRENT_PAGE) {
+    switch(CURRENT_WEBVIEW) {
         case 'dashboard':
             router = new DashboardRouter();
             break;
