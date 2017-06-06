@@ -40,14 +40,10 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             { from: 'src/tips/tips.json' },
+            { from: 'src/templates/index.html', to: 'index.html' },
             { from: 'src/img/favicon.ico', to: 'img/favicon.ico' }
         ]),
         new ExtractTextPlugin('[hash:6].main.css'),
-        new HtmlWebpackPlugin({
-            title: 'index',
-            template: 'src/templates/index.html',
-            filename: 'index.html'
-        }),
         new HtmlWebpackPlugin({
             title: 'webview1',
             template: 'src/templates/webview1.html',
