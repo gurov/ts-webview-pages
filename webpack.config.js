@@ -49,9 +49,9 @@ module.exports = {
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
-            title: 'dashboard',
-            template: 'src/templates/dashboard.html',
-            filename: 'dashboard.html'
+            title: 'webview1',
+            template: 'src/templates/webview1.html',
+            filename: 'webview1.html'
         }),
 
         new HtmlWebpackPlugin({

@@ -1,4 +1,4 @@
-import { Tip, User } from '../models/dashboard';
+import { Tip, User } from '../models/webview1';
 import { isJson } from './helpers';
 
 class ApiService {
@@ -16,7 +16,7 @@ class ApiService {
         return this.cache<User>('https://api.github.com/users/' + login, null, 30);
     }
 
-    getDashboardTips(): Promise<Tip[]> {
+    getTips(): Promise<Tip[]> {
         return this.cache<Tip[]>('./tips.json', null, 60 * 60 * 24);
     }
 

@@ -1,4 +1,4 @@
-import { Tip } from '../../models/dashboard';
+import { Tip } from '../../models/webview1';
 import { apiService } from '../../services/api-service';
 
 export function getTipList(tips: Tip[]): string {
@@ -6,13 +6,13 @@ export function getTipList(tips: Tip[]): string {
 }
 
 export function updateTipList(elementId: string) {
-    apiService.getDashboardTips().then(function (response) {
+    apiService.getTips().then(function (response) {
         document.getElementById(elementId).innerHTML = `<ol>${getTipList(response)}</ol>`;
     });
 }
 
 export function updateTipDetails(titleElementId: string, descriptionElementId: string, tipId: string) {
-    apiService.getDashboardTips().then(function (response) {
+    apiService.getTips().then(function (response) {
         const tip = response.filter(t => t.id === tipId)[0];
         if (tip) {
             document.getElementById(titleElementId).innerHTML = tip.title;

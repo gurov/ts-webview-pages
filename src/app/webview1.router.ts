@@ -1,12 +1,12 @@
 import { apiService } from './services/api-service';
 import { displayArticle } from './services/helpers';
 
-import { updateTipDetails, updateTipList } from './components/dashboard/tip-list';
-import { updateUserList } from "./components/dashboard/github-user-list";
-import { updateUserDetails } from "./components/dashboard/github-user-details";
+import { updateTipDetails, updateTipList } from './components/webview1/tip-list';
+import { updateUserList } from "./components/webview1/github-user-list";
+import { updateUserDetails } from "./components/webview1/github-user-details";
 
 
-export class DashboardRouter {
+export class Webview1Router {
 
     constructor() {
 

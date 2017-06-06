@@ -1,5 +1,5 @@
 import { apiService } from "../../services/api-service";
-import { User } from "../../models/dashboard";
+import { User } from "../../models/webview1";
 
 function getUserItemList(user: User): string {
     return `

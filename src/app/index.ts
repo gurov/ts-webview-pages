@@ -1,6 +1,6 @@
 import './../main.css';
 
-import { DashboardRouter } from './dashboard.router';
+import { Webview1Router } from './webview1.router';
 import { apiService } from './services/api-service';
 import { Webview2Router } from './webview2.router';
 
@@ -18,8 +18,8 @@ window['init'] = function (tokens: string) {
     }
 
     switch(CURRENT_WEBVIEW) {
-        case 'dashboard':
-            router = new DashboardRouter();
+        case 'webview1':
+            router = new Webview1Router();
             break;
         case 'webview2':
             router = new Webview2Router();
