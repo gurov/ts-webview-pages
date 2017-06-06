@@ -55,9 +55,9 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            title: 'profile',
-            template: 'src/templates/profile.html',
-            filename: 'profile.html'
+            title: 'webview2',
+            template: 'src/templates/webview2.html',
+            filename: 'webview2.html'
         }),
     ],
     devtool: 'source-map',

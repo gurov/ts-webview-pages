@@ -8,7 +8,7 @@ describe('Tip list', () => {
             title: '1',
             description: '1'
         }];
-        const testString = '<div class="tip-line-item"><a class="text-gray-dark" href="#tip-details-article/1">1</a></div>';
+        const testString = '<li><a href="#tip-details-article/1">1</a></li>';
         let tipsGenerated = getTipList(tips);
         expect(testString).to.equal(tipsGenerated);
     });
