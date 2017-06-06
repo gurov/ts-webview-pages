@@ -1,14 +1,12 @@
-
-.icon-wv {
-    position: relative;
-    top: 5px;
-    margin-top: -5px;
-    display: inline-block;
-    line-height: 1;
-    width: 22px;
-    height: 22px;
+.loader {
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  background-image: url('./img/cookie.png');
+  animation: rotate 3s infinite ease-out;
 }
 
-.icon-question {
-    background-image: url('./img/question.png');
+@keyframes rotate {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(2840deg); }
 }

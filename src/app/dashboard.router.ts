@@ -34,7 +34,7 @@ export class DashboardRouter {
     }
 
     updateMain() {
-        updateUserList('github-users', ['gurov', 'rnixik']);
+        updateUserList('github-users', ['gurov', 'rnixik', 'otokarev']);
         updateTipList('tip-list');
     }
 
