@@ -1,5 +1,4 @@
 .idea
-dist
 client-webviews.iml
 node_modules
 yarn.lock

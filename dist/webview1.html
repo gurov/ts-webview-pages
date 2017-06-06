@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Webview">
+    <meta name="author" content="Pavel Gurov">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+	<title>Webview 1</title>
+<link href="a79dd7.main.css" rel="stylesheet"></head>
+<script>
+    const CURRENT_WEBVIEW = 'webview1';
+</script>
+<body>
+
+<div class="container-fluid">
+
+    <article id="main-article">
+        <div class="card-block">
+            <h3>Some Github Users</h3>
+            <div id="github-users"><div class="loader"></div></div>
+        </div>
+        <hr>
+        <div class="card-block">
+            <h3>Questions</h3>
+            <div id="tip-list"></div>
+        </div>
+    </article>
+
+    <article id="tip-details-article" class="hidden-xl-down">
+        <div class="card-block">
+            <h3>
+                <a href="#main-article" class="btn btn-sm btn-secondary">🡄</a>
+                <span id="tip-details-title"><div class="loader"></div></span>
+            </h3>
+            <p id="tip-details-description"></p>
+        </div>
+    </article>
+
+    <article id="user-article" class="hidden-xl-down">
+        <div class="card-block">
+            <h3>
+                <a href="#main-article" class="btn btn-sm btn-secondary">🡄</a>
+                User detaiils
+            </h3>
+            <div id="github-user-details"><div class="loader"></div></div>
+        </div>
+    </article>
+
+</div>
+
+<script type="text/javascript" src="a79dd7.bundle.js"></script></body>
+</html>
