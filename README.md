@@ -1,13 +1,12 @@
 # ts-webview-pages
-Simple boilerplate typescript code for building webviews.
-Without frameworks. With authorization.
+Simple boilerplate typescript code for building webviews. Without frameworks. With authorization. Android v5+
 
 Example in iframe [here](https://gurov.github.io/ts-webview-pages/dist/)
 
 ## Features
 
 * Typescript (Fewer errors, easier refactoring)
-* No frameworks (Small final bandle)
+* No frameworks (Extra small final bandle: 6kB for [example](https://gurov.github.io/ts-webview-pages/dist/))
 * A simple code (Without: two way bindings, reactive programming, etc.)
 * Auth requests (Just pass authToken from Android)
 
