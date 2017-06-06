@@ -2,6 +2,8 @@
 Simple boilerplate typescript code for building webviews.
 Without frameworks. With authorization.
 
+Example in iframe [here](https://gurov.github.io/ts-webview-pages/dist/)
+
 ## Features
 
 * Typescript (Fewer errors, easier refactoring)
