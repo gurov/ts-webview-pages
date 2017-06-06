@@ -28,7 +28,6 @@
             <span class="align-self-center mb-1 text-white">Galaxy S5</span>
             <iframe src="webview1.html"
                 id="mobileIframe"
-                onload="onMyFrameLoad(this)"
                 class="mobile-phone-iframe align-self-center"
                 width="360"
                 height="640"
@@ -47,14 +46,12 @@
     </div>
 </body>
 <script>
-    function onMyFrameLoad() {
-        var iframe = document.getElementById('mobileIframe');
-        iframe.onload = () => {
-            iframe.contentWindow.init(JSON.stringify({
-                authToken: 'Bearer Hello!',
-                refreshToken: ''
-            }));
-        };
+    var iframe = document.getElementById('mobileIframe');
+    iframe.onload = function() {
+        iframe.contentWindow.init(JSON.stringify({
+            authToken: 'Bearer Hello!',
+            refreshToken: ''
+        }));
     };
 </script>
 </html>
