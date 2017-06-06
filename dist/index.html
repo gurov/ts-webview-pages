@@ -6,17 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Webview">
     <meta name="author" content="Pavel Gurov">
-	<title>index</title>
-<link href="a79dd7.main.css" rel="stylesheet"></head>
-<script>
-    const CURRENT_WEBVIEW = 'index';
-</script>
-<body>
-    <div class="hash-navigation"></div>
-<script type="text/javascript" src="a79dd7.bundle.js"></script></body>
-<script>
-    if ("onhashchange" in window) {
-        document.querySelector('.hash-navigation').innerHTML = '#';
+	<title>Example webview in iframe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <style>
+
+     .mobile-phone {
+        height: 740px;
+        width: 400px;
+        border-radius: 6px;
+        background-color: #1C2B36;
     }
+
+    </style>
+</head>
+
+<body>
+    <div class="container d-flex align-items-center">
+
+        <div class="mobile-phone d-flex flex-column p-2 justify-content-center">
+            <span class="align-self-center mb-1 text-white">Galaxy S5</span>
+            <iframe src="webview1.html"
+                id="mobileIframe"
+                onload="onMyFrameLoad(this)"
+                class="mobile-phone-iframe align-self-center"
+                width="360"
+                height="640"
+                align="left"></iframe>
+
+        </div>
+        <div class="pl-3">
+
+            <p>Example load webview in iframe.</p>
+            <p>
+                <a href="https://github.com/gurov/ts-webview-pages">Github repo</a>
+            </p>
+
+        </div>
+
+    </div>
+</body>
+<script>
+    function onMyFrameLoad() {
+        var iframe = document.getElementById('mobileIframe');
+        iframe.onload = () => {
+            iframe.contentWindow.init(JSON.stringify({
+                authToken: 'Bearer Hello!',
+                refreshToken: ''
+            }));
+        };
+    };
 </script>
 </html>
