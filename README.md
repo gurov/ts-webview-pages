@@ -1,12 +1,12 @@
 # ts-webview-pages
 Simple boilerplate typescript code for building webviews. Without frameworks. With authorization. Android v5+
 
-Example in iframe [here](https://gurov.github.io/ts-webview-pages/dist/)
+Example in iframe [here](https://gurov.github.io/ts-webview-pages/dist/).
 
 ## Features
 
 * Typescript (Fewer errors, easier refactoring)
-* No frameworks (Extra small final bandle: 6kB for [example](https://gurov.github.io/ts-webview-pages/dist/))
+* No frameworks (Extra small final bandle: **6kB** for [example](https://gurov.github.io/ts-webview-pages/dist/))
 * A simple code (Without: two way bindings, reactive programming, etc.)
 * Auth requests (Just pass authToken from Android)
 
@@ -79,7 +79,6 @@ dist/
 └── webview1.html
 ```
 
-
 ## How to use in Android
 
 ```java
@@ -95,7 +94,7 @@ public void onCreate(Bundle savedInstanceState) {
             view.evaluateJavascript("javascript:init('" + authTokens + "')", null);
         }
     });
-    webview.loadUrl("https://example.com/dashboard.html");
+    webview.loadUrl("https://example.com/webview1.html");
 }
 ```
 
